@@ -3,6 +3,8 @@ require_relative '../player.rb'
 module Players 
   class Computer < Player 
     def move(board)
+      elsif board.taken?(1) && board.position(1) != self.token && board.taken?(9) && board.position(9) != self.token && !board.taken?(5)
+        "5"
       elsif board.taken?(7) && board.position(7) != self.token && board.taken?(9) && board.position(9) != self.token && !board.taken?(8)
         "8"
       elsif board.taken?(1) && board.position(1) != self.token && board.taken?(9) && board.position(9) != self.token && !board.taken?(5)
