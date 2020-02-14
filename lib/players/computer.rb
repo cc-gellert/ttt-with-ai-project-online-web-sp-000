@@ -7,16 +7,16 @@ module Players
         "8"
       elsif board.taken?(1) && board.position(1) != self.token && board.taken?(9) && board.position(9) != self.token && !board.taken?(5)
         "5"
-      elsif board.position(3) == self.token && board.position(9) == self.token && !board.taken?(6)
-        "6"
-      elsif board.position(7) == self.token && board.position(9) == self.token && !board.taken?(8)
-        "8"
       elsif board.position(1) == self.token && board.position(3) == self.token && !board.taken?(2)
         "2"
       elsif board.position(1) == self.token && board.position(9) == self.token && !board.taken?(5)
         "5" 
       elsif board.position(3) == self.token && board.position(7) == self.token && !board.taken?(5)
         "5"
+      elsif board.position(3) == self.token && board.position(9) == self.token && !board.taken?(6)
+        "6"
+      elsif board.position(7) == self.token && board.position(9) == self.token && !board.taken?(8)
+        "8"
       elsif board.taken?(1) && board.taken?(3) && !board.taken?(2)
         "2"
       elsif board.taken?(1) && board.taken?(7) && !board.taken?(4)
