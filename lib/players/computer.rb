@@ -37,10 +37,10 @@ module Players
         "9"
       elsif !board.taken?(5)
         "5"
-      elsif !board.taken?(2)
-        "2"
       elsif !board.taken?(4)
         "4"
+      elsif !board.taken?(2)
+        "2"
       elsif !board.taken?(6)
         "6"
       elsif !board.taken?(8)
